@@ -11,7 +11,7 @@ html{
 body{
   font-family: montserrat;
 }
-ul{
+.sidebar ul{
   position: fixed;
   top: 0;
   left: 0;
@@ -22,11 +22,11 @@ ul{
   overflow-y: auto;
   transition: all .3s;
 }
-ul li{
+.sidebar ul li{
   height: 65px;
   outline: none;
 }
-ul li a{
+.sidebar ul li a{
   display: block;
   height: 100%;
   width: 100%;
@@ -39,7 +39,7 @@ ul li a{
   border-bottom: 1px solid black;
   border-left: 5px solid transparent;
 }
-li a.contact{
+.sidebar li a.contact{
   border-bottom: 1px solid rgba(0,0,0,.5);
 }
 .active a{
@@ -123,9 +123,23 @@ p{
 .post {
   margin-bottom: 20px;
 }
-.ul_show{
+.sidebar .ul_show{
   margin-left: 0px;
 }
 .slide_image{
   margin-left: 260px;
+}
+.inside_list ul {
+  margin-left: 240px;
+  margin-right: 200px;
+  width: 240px;
+  /*background: #1e1e1e;*/
+  /*height: 100vh;*/
+/*  overflow-y: auto;
+  transition: all .3s;*/
+}
+.inside_list ul li::before {
+  content: "✅";
+  display: inline-block;
+  margin-right: 0.2rem;
 }
