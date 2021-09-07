@@ -23,42 +23,7 @@
  </p>
           <hr>
         </div>
-        <div class="post">
-          <div class="date">September 07th, 2021</div>
-        <h2>What is JavaScript Hoisting?</h2>
-          
- <p>
-    <p class="quote">Variable declaritons are scanned and are made undefined.</p>
-    <p class="quote">Function declarations are scanned and are made available. It means that it allow us to use a function before we declare it in our code.</p>
-    <p class="quote">JavaScript only hoists declarations, not initializations.</p><br>
 
-  <p>
-    <xmp>
-      getName();
-      console.log(x);
-
-      var x = 7;
-
-      function getName() {
-        console.log("Namaste JavaScript");
-      }
-    </xmp>
-When we run this code, we will get "Namaste JavaScript" and "Undefined"<br>However, if we run this code<br>
-    <xmp>
-      getName();
-      console.log(x);
-
-      function getName() {
-        console.log("Namaste JavaScript");
-      }    
-    </xmp>
-We will get "Namaste JavaScript" and "Not defined". This is how the hoisting work in JavaScript.<br>I will treat the difference between Undefined and not defined later.
-
-  </p>
-  
-   <br><br>
-   <h2>So, what is the main advantage of hoisitng?</h2><br> 1. We don't have to worry about order of use and declaration.<br><br> 2. Not to be forced to place the inner-most functions at the top of the script block, and the outer-most functions at the bottom.
-   </p>
         </div>
       </body>
       </html>
