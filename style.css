@@ -8,8 +8,23 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  font-family: montserrat;
+body {
+  font-family: Vinila;
+  font-size: 1.3rem;
+}
+
+span {
+  color: white;
+  background: black;
+  display: inline-block;
+  padding: .05em .25em 0;
+  font-size: 2rem;
+}
+@font-face {
+  font-family: Vinila;
+  src: url("https://jsbin-user-assets.s3.amazonaws.com/simevidas/vinila.woff2") format("woff2");
+  font-style: oblique 0deg 20deg; /* 20deg is required for Safari */
+  font-weight: 1 1000;
 }
 .sidebar ul{
   position: fixed;
@@ -72,7 +87,7 @@ i{
 }
 .sec3{
   margin-left: -20px;
-  background: url(portfolio.jpg) no-repeat;
+  background: url(whatilearn.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -104,6 +119,10 @@ h2{
   font-size: 40px;
   padding: 15px 20px;
 }
+h3{
+  font-size: 40px;
+  padding: 15px 20px;
+}
 p{
   padding: 0 20px 10px 20px;
   text-align: justify;
@@ -130,7 +149,7 @@ p{
   margin-left: 260px;
 }
 .inside_list ul {
-  margin-left: 240px;
+  margin-left: 50px;
   margin-right: 200px;
   width: 240px;
   /*background: #1e1e1e;*/
@@ -143,3 +162,15 @@ p{
   display: inline-block;
   margin-right: 0.2rem;
 }
+.inside_list ul ul li::before {
+  content: "📌";
+}
+.inside_list ul ul ul li::before {
+  content: "🤷‍♀️";
+}
+
+
+.fvs {
+  font-variation-settings: "slnt" 10;
+}
+

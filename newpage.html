@@ -6,28 +6,59 @@
     </head>
       <body>
         <div class="post">
-          <div class="date">February 18th, 2018</div>
-        <h2>This Is My First Article</h2>
-       <p class="quote">Bacon ipsum dolor amet beef ribs ground round burgdoggen ham hock tongue spare ribs beef kevin boudin tenderloin pork loin ribeye pastrami. Sirloin biltong swine spare ribs shank jerky kielbasa porchetta jowl beef ribs salami boudin shoulder shankle pancetta.</p>
+          <div class="date">September 06th, 2021</div>
+        <h2>How's JavaScript Work?</h2>
+       <p class="quote">Everything in JavaScript happens inside an Execution Context.</p>
+       <p class="quote">Java Script is a synchronous single-threaded language(that can be non-blocking.</p>
+       <p class="quote">Java Script is a loosely typed langauge a.k.a weakly typed language.</p><br>
           
- <p>Strip steak shankle shoulder beef ribs, ground round pig tail spare ribs corned beef short loin fatback turkey capicola. Short loin filet mignon sirloin meatloaf, cupim ball tip prosciutto t-bone pork belly boudin jowl swine.
+ <p>
+    <div class="img">
+      <img class="img-js" src="javascriptWork.jpg" alt="namaste lecture">
+    </div>
+ </p>
+    <br><br>
+ <p>We can describe the "Execution Context" as a box. left: Memory(aka Variable Environment) Right: Code(aka Thread of Execution). In JavaScript, it alocate the memory variable and function before run the code. variable : Undefined / function : whole things. Whenever the function invoke, another excution context will execute.
 
-Rump doner chuck, turkey pancetta chicken beef ribs beef. Salami chicken pastrami, pork belly sirloin cupim pork. Kielbasa burgdoggen biltong drumstick, chuck leberkas short loin corned beef pork loin shoulder alcatra tri-tip. Meatloaf doner boudin t-bone tri-tip. 
-   <br><br>
-Short loin kielbasa salami burgdoggen turkey pancetta alcatra, jowl strip steak flank bresaola sausage chicken. Hamburger beef fatback, rump swine strip steak cow porchetta flank sirloin corned beef brisket venison.
-
-T-bone leberkas cow porchetta jowl biltong. Tri-tip pork belly cow ham hock ball tip, pork loin salami buffalo flank andouille ribeye shankle bresaola. T-bone sausage ribeye pastrami biltong. Ground round beef ribs porchetta, chuck pork jowl pancetta short loin.</p>
+ </p>
           <hr>
         </div>
         <div class="post">
-          <div class="date">February 5th, 2018</div>
-        <h2>This Is My First Second Article</h2>
+          <div class="date">September 07th, 2021</div>
+        <h2>What is JavaScript Hoisting?</h2>
           
- <p>Cat ipsum dolor sit amet, meow meow, yet stare out the window, thinking longingly about tuna brine. Scratch the furniture you call this cat food demand to have some of whatever the human is cooking, then sniff the offering and walk away. 
+ <p>
+    <p class="quote">Variable declaritons are scanned and are made undefined.</p>
+    <p class="quote">Function declarations are scanned and are made available. It means that it allow us to use a function before we declare it in our code.</p>
+    <p class="quote">JavaScript only hoists declarations, not initializations.</p><br>
+
+  <p>
+    <xmp>
+      getName();
+      console.log(x);
+
+      var x = 7;
+
+      function getName() {
+        console.log("Namaste JavaScript");
+      }
+    </xmp>
+When we run this code, we will get "Namaste JavaScript" and "Undefined"<br>However, if we run this code<br>
+    <xmp>
+      getName();
+      console.log(x);
+
+      function getName() {
+        console.log("Namaste JavaScript");
+      }    
+    </xmp>
+We will get "Namaste JavaScript" and "Not defined". This is how the hoisting work in JavaScript.<br>I will treat the difference between Undefined and not defined later.
+
+  </p>
+  
    <br><br>
-   Fight an alligator and win sit and stare. Sit and stare. Jump off balcony, onto stranger's head. White cat sleeps on a black shirt. Scamper licks your face yet attack the child and get video posted to internet for chasing red dot so leave fur on owners clothes for meow to be let out damn that dog.
-    <p class="quote">Flee in terror at cucumber discovered on floor mark territory, or be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day and have secret plans eat too much then proceed to regurgitate all over living room carpet while humans eat dinner.</p>
-Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked get video posted to internet for chasing red dot ooh, are those your $250 dollar sandals?</p>
+   <h2>So, what is the main advantage of hoisitng?</h2><br> 1. We don't have to worry about order of use and declaration.<br><br> 2. Not to be forced to place the inner-most functions at the top of the script block, and the outer-most functions at the bottom.
+   </p>
         </div>
       </body>
       </html>
